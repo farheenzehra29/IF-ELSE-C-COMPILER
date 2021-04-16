@@ -38,3 +38,13 @@
 - Constant Folding (Done)
 - Constant Propagation (Done)
 - Strength Reduction (Done)
+
+# To Run The Code
+Place all files in the same directory.
+flex -l proj.l
+yacc -vd icg.y
+gcc lex.yy.c y.tab.c -lm -ll
+./a.out
+Here proj.l is the lexical analyzer, yacc -vd icg.y runs icg.y written in YACC and -d creates y.tab.h and -v creates y.output (debugger for parser). 
+The gcc is used for the compilation of the C code. The executable file(./a.out) is run to get the desired output.
+
