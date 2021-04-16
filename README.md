@@ -44,7 +44,8 @@ Place all files in the same directory.
 1. flex -l proj.l
 2. yacc -vd icg.y
 3. gcc lex.yy.c y.tab.c -lm -ll
-4. ./a.out
+4. ./a.out 
+
 Here proj.l is the lexical analyzer, yacc -vd icg.y runs icg.y written in YACC and -d creates y.tab.h and -v creates y.output (debugger for parser). 
 The gcc is used for the compilation of the C code. The executable file(./a.out) is run to get the desired output.
 
